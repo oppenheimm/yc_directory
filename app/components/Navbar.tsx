@@ -25,6 +25,13 @@ export default async function Navbar() {
           <Image src="/football.jpg" alt="Logo" width={100} height={50} />
         </Link>
 
+          {/* Category Links */}
+        <div className="flex gap-4 text-black">
+            <Link href="/men"><span className="hover:underline">Men</span></Link>
+            <Link href="/women"><span className="hover:underline">Women</span></Link>
+            <Link href="/kids"><span className="hover:underline">Kids</span></Link>
+        </div>
+
         <div className="flex items-center gap-5 text-black">
           {session?.user ? (
             <>
